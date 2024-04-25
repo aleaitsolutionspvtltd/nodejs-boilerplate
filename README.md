@@ -17,7 +17,27 @@ This project is a Node.js backend application built to provide RESTful APIs for 
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
 
 ```bash
 git clone <repository_url>
+ ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables:**
+
+    Create a `.env` file in the root directory and add the following variables:
+
+    ```
+    PORT=3000
+    MONGO_URI=<your_mongodb_uri>
+    SENDGRID_API_KEY=<your_sendgrid_api_key>
+    JWT_SECRET=<your_jwt_secret_key>
+    ```
+
+    Replace `<your_mongodb_uri>`, `<your_sendgrid_api_key>`, and `<your_jwt_secret_key>` with your MongoDB URI, SendGrid API key, and JWT secret key respectively.
