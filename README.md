@@ -19,9 +19,9 @@ This project is a Node.js backend application built to provide RESTful APIs for 
 
 1. **Clone the repository**:
 
-```bash
-git clone <repository_url>
- ```
+    ```bash
+    git clone <repository_url>
+    ```
 
 2. **Install dependencies:**
 
@@ -35,9 +35,33 @@ git clone <repository_url>
 
     ```
     PORT=3000
-    MONGO_URI=<your_mongodb_uri>
+    DATABASE_URL=<your_mongodb_uri>
     SENDGRID_API_KEY=<your_sendgrid_api_key>
-    JWT_SECRET=<your_jwt_secret_key>
+    JWT_SECRET_KEY=<your_jwt_secret_key>
+    EMAIL_HOST=<your_email_host>
+    EMAIL_USER=<your_email_user>
+    EMAIL_PASS=<your_email_pass>
+    EMAIL_PORT=<your_email_port>
     ```
 
     Replace `<your_mongodb_uri>`, `<your_sendgrid_api_key>`, and `<your_jwt_secret_key>` with your MongoDB URI, SendGrid API key, and JWT secret key respectively.
+
+## Usage
+
+To start the server, run:
+
+```bash
+npm run dev
+   
+   ```
+    ## Tech Stack
+
+    - Node.js
+    - Express.js
+    - MongoDB
+    - Mongoose
+    - Bcrypt
+    - SendGrid Mail
+    - JSON Web Token (JWT)
+    - CORS
+    - NODEMON
